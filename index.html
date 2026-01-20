@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Job Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h2>JobPortal</h2>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<section class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search jobs...">
+</section>
+
+<section class="job-container" id="jobContainer"></section>
+
+<!-- APPLY MODAL -->
+<div class="modal" id="applyModal">
+  <div class="modal-content">
+    <h3 id="jobTitle"></h3>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <button onclick="closeModal()">Submit</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
